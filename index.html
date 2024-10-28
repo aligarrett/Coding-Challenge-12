@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing Tool</title>
+    <style>
+        /* Basic styling for layout */
+        #canvas {
+            border: 1px solid #000;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Drawing Tool</h1>
+
+    <!-- Tool Selection -->
+    <div>
+        <label>
+            <input type="radio" name="tool" value="pencil" checked>
+            Pencil
+        </label>
+        <label>
+            <input type="radio" name="tool" value="brush">
+            Brush
+        </label>
+        <label>
+            <input type="radio" name="tool" value="eraser">
+            Eraser
+        </label>
+    </div>
+
+    <!-- Color Picker -->
+    <div>
+        <label for="color">Choose Color: </label>
+        <input type="color" id="color" value="#000000">
+    </div>
+
+    <!-- Canvas and Clear Button -->
+    <button id="clearCanvas">Clear Canvas</button>
+    <canvas id="canvas" width="500" height="400"></canvas>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>
